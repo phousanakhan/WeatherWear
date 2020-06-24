@@ -11,15 +11,15 @@ import Foundation
 struct Weather: Codable {
     let id, dt, cod, timezone: Int
     let name, base: String
-    let coordinate: Coordinate
+    let coordinate: Coord
     let weather: [WeatherData]
     let main: Main
     let clouds: Clouds
     let sys: Sys
 }
 
-struct Coordinate: Codable {
-    let longitude, latitude: Double
+struct Coord: Codable {
+    let lon, lat: Double
 }
 
 struct WeatherData: Codable, Identifiable {
@@ -33,7 +33,7 @@ struct Main: Codable {
 }
 
 struct Clouds: Codable {
-    let cloud: String
+    let all: String
 }
 
 struct Sys: Codable {
