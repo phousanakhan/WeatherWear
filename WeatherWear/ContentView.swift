@@ -9,13 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var weather = CurrentWeatherViewModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack{
+            Text("\(weather.current?.name ?? "Unknown")")
+        }
+    }
+}
+extension Double {
+    var round: Int {
+        return Int(self)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+

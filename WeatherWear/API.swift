@@ -10,9 +10,9 @@
 //1.API KEY + URL ENDPOINT
 import Foundation
 import SwiftUI
-private let baseUrlCurrentWeather = URL(string:"api.openweathermap.org/data/2.5/weather")!
+private let baseUrlCurrentWeather = URL(string:"https://api.openweathermap.org/data/2.5/weather")!
 private let appid = "4e11d98189a1f1911eeb04f7ce0d209f"
-private let baseUrlWeeklyWeather = URL(string: "api.openweathermap.org/data/2.5/forecast/daily")!
+private let baseUrlWeeklyWeather = URL(string: "https://api.openweathermap.org/data/2.5/forecast/daily")!
 
 private var decoder: JSONDecoder{
     let decode = JSONDecoder()
@@ -29,7 +29,7 @@ class API {
         }
         URLSession.shared.dataTask(with: url) { (data, res, err) in
             guard let data = data, err == nil else {
-                fatalError()
+                fatalError(err!.localizedDescription)
             }
             do {
                 let weather = try decoder.decode(Weather.self, from: data)
@@ -38,7 +38,7 @@ class API {
                 }
             }
             catch {
-                fatalError()
+                fatalError(error.localizedDescription)
             }
         }.resume()
     }
