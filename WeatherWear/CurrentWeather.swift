@@ -13,18 +13,27 @@ struct CurrentWeather: View {
     var height: CGFloat = 0
     
     var body: some View {
-        VStack(alignment: .center, spacing: 20) {
-            Text("Today")
-            .font(.title)
+        VStack(alignment: .center, spacing: 40) {
+            Text("\(weather?.name ?? "unknown")")
             .foregroundColor(.white)
-            .bold()
+            .fontWeight(Font.Weight.light)
+            .font(.system(size: 30))
             HStack{
                 Text("\(weather?.main.temp.round ?? 0)")
                     .foregroundColor(.white)
-                    .fontWeight(Font.Weight.heavy)
-                    .font(.system(size: 65))
+                    .fontWeight(Font.Weight.light)
+                    .font(.system(size: 90))
             }
             Text("\(weather?.weather.last?.description ?? "Unknown")")
-        }
+                .foregroundColor(.white)
+                .fontWeight(Font.Weight.light)
+                .font(.system(size: 20))
+            Text("\(weather?.main.tempMax.round ?? 0)")
+                .foregroundColor(.white)
+                .fontWeight(Font.Weight.light)
+                .font(.system(size: 20))
+        }.frame(width: height, height: height)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .topLeading, endPoint: .bottomTrailing))
+
     }
 }

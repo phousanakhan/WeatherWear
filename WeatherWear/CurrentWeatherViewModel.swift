@@ -18,7 +18,7 @@ final class CurrentWeatherViewModel: ObservableObject {
 }
 
 extension CurrentWeatherViewModel {
-    func fetch( city: String = "edmonton"){
+    func fetch( city: String = "london"){
         API.fetchCurrentWeather(by: city) {
             self.current = $0
         }
