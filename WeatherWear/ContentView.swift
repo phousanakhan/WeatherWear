@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var selected = 0
     @ObservedObject var weather = CurrentWeatherViewModel()
     @State var city: String = ""
+    
 
     var body: some View {
 

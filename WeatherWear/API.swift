@@ -10,6 +10,8 @@
 //1.API KEY + URL ENDPOINT
 import Foundation
 import SwiftUI
+import UIKit
+import MapKit
 private let baseUrlCurrentWeather = URL(string:"https://api.openweathermap.org/data/2.5/weather")!
 private let appid = "4e11d98189a1f1911eeb04f7ce0d209f"
 private let baseUrlWeeklyWeather = URL(string: "https://api.openweathermap.org/data/2.5/forecast/daily")!
@@ -42,6 +44,7 @@ class API {
             }
         }.resume()
     }
+
 }
 
 extension URL {

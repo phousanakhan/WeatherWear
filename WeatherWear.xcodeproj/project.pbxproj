@@ -116,8 +116,8 @@
 				D3F0D34024A3F036009AEF4A /* Preview Content */,
 				D3F0D36824A3F0C7009AEF4A /* WeatherWear.swift */,
 				D3F0D36A24A3F40B009AEF4A /* API.swift */,
-				D3C9B57724A5412700A54C85 /* CurrentWeatherViewModel.swift */,
 				D3C9B57924A54F9900A54C85 /* CurrentWeather.swift */,
+				D3C9B57724A5412700A54C85 /* CurrentWeatherViewModel.swift */,
 			);
 			path = WeatherWear;
 			sourceTree = "<group>";

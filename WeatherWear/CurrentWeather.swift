@@ -30,7 +30,7 @@ struct CurrentWeather: View {
                 .font(.system(size: 20))
             
         }.frame(width: height, height: height)
-            .background(LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .topLeading, endPoint: .bottomTrailing))
+            .background(LinearGradient(gradient: Gradient(colors: [Color.secondary, Color.accentColor]), startPoint: .topLeading, endPoint: .bottomTrailing))
 
     }
 }
