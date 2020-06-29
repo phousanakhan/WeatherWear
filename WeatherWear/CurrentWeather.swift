@@ -19,7 +19,7 @@ struct CurrentWeather: View {
             .fontWeight(Font.Weight.light)
             .font(.system(size: 30))
             HStack{
-                Text("\(weather?.main.temp.round ?? 0)")
+                Text("\(weather?.main.temp.round  ?? 0)" + "°")
                     .foregroundColor(.white)
                     .fontWeight(Font.Weight.light)
                     .font(.system(size: 90))
@@ -28,10 +28,7 @@ struct CurrentWeather: View {
                 .foregroundColor(.white)
                 .fontWeight(Font.Weight.light)
                 .font(.system(size: 20))
-            Text("\(weather?.main.tempMax.round ?? 0)")
-                .foregroundColor(.white)
-                .fontWeight(Font.Weight.light)
-                .font(.system(size: 20))
+            
         }.frame(width: height, height: height)
             .background(LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .topLeading, endPoint: .bottomTrailing))
 

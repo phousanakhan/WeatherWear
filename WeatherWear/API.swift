@@ -22,7 +22,7 @@ private var decoder: JSONDecoder{
 
 class API {
     class func fetchCurrentWeather(by city: String, onSuccess: @escaping (Weather) -> Void ){
-        let query = ["q": "\(city)", "appid": appid, "units": "Imperial"]
+        let query = ["q": "\(city)", "appid": appid, "units": "Metric"]
         guard let url = baseUrlCurrentWeather.withQueries(queries: query)
             else{
                 fatalError()
