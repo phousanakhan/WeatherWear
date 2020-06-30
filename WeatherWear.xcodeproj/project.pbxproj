@@ -19,6 +19,7 @@
 		D3F0D35B24A3F037009AEF4A /* WeatherWearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D35A24A3F037009AEF4A /* WeatherWearUITests.swift */; };
 		D3F0D36924A3F0C7009AEF4A /* WeatherWear.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D36824A3F0C7009AEF4A /* WeatherWear.swift */; };
 		D3F0D36B24A3F40B009AEF4A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D36A24A3F40B009AEF4A /* API.swift */; };
+		D3F3EBCC24ABDF8700010BFC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F3EBCB24ABDF8700010BFC /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		D3F0D35C24A3F037009AEF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3F0D36824A3F0C7009AEF4A /* WeatherWear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWear.swift; sourceTree = "<group>"; };
 		D3F0D36A24A3F40B009AEF4A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		D3F3EBCB24ABDF8700010BFC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				D3F0D36A24A3F40B009AEF4A /* API.swift */,
 				D3C9B57924A54F9900A54C85 /* CurrentWeather.swift */,
 				D3C9B57724A5412700A54C85 /* CurrentWeatherViewModel.swift */,
+				D3F3EBCB24ABDF8700010BFC /* LocationManager.swift */,
 			);
 			path = WeatherWear;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				D3C9B57A24A54F9900A54C85 /* CurrentWeather.swift in Sources */,
 				D3F0D33B24A3F034009AEF4A /* SceneDelegate.swift in Sources */,
 				D3F0D33D24A3F034009AEF4A /* ContentView.swift in Sources */,
+				D3F3EBCC24ABDF8700010BFC /* LocationManager.swift in Sources */,
 				D3F0D36924A3F0C7009AEF4A /* WeatherWear.swift in Sources */,
 				D3F0D36B24A3F40B009AEF4A /* API.swift in Sources */,
 				D3C9B57824A5412700A54C85 /* CurrentWeatherViewModel.swift in Sources */,
